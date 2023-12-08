@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        
+    </div>
+        <div class="container" data-tilt>
+            
+            <h1>Password Generator</h1>
+            <div class="display-container">
+
+                <input readonly placeholder="Password" class="display" data-passwordDisplay>
+                <button  class="copy-btn"> 
+                    <span class="amanpal" data-copyMsg> </span>
+                    <img src="copy.png" alt="copy" width="23" height="23">
+                </button>
+
+            </div>
+
+            <div class="input-container">
+
+                <div class="length-container">
+                    <p>Password Length</p>
+                    <p data-length-number>0</p>
+                </div>
+                
+                <input  type="range" min="1" max="20" class="slider" data-lengthSlider>
+
+                <div class="include-uppercase">
+                    <input type="checkbox" id="option1" value="uppercase">
+                    <label for="option1">Include Uppercase letters</label>
+                </div>
+
+                <div class="include-lowercase">
+                    <input type="checkbox" id="option2" value="lowercase">
+                    <label for="option2">Include Lowercase letters</label>
+                </div>
+
+                <div class="include-number">
+                    <input type="checkbox" id="option3" value="number">
+                    <label for="option3">Include Number</label>
+                </div>
+
+                <div class="include-symbol">
+                    <input type="checkbox" id="option4" value="symbol">
+                    <label for="option4">Include Symbol</label>
+                </div>
+
+                <div class="strength">
+                    <div class="strength-type">Strength</div>
+                    <div class="indicator"></div>
+                </div>
+
+                <div class="btn">
+                    <div class="generate-btn">
+                        <button class="generate">Generate Password</button>
+                    </div>
+
+                    <div class="generate-btn" >
+                        <button onclick="reset()" class="reset">Reset</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+</div>
+    <script src="vanilla-tilt.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
